@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-bootstrap'
 
 class Home extends Component {
   login() {
@@ -7,29 +8,33 @@ class Home extends Component {
   render() {
     const { isAuthenticated } = this.props.auth;
     return (
-      <div className="container">
-        {
-          isAuthenticated() && (
-              <h4>
-                You are logged in!
-              </h4>
-            )
-        }
-        {
-          !isAuthenticated() && (
-              <h4>
-                You are not logged in! Please{' '}
-                <a
-                  style={{ cursor: 'pointer' }}
-                  onClick={this.login.bind(this)}
-                >
-                  Log In
-                </a>
-                {' '}to continue.
-              </h4>
-            )
-        }
-      </div>
+      <Grid>
+        <Row>
+          <Col sm={12} md={12}>
+            {
+              isAuthenticated() && (
+                  <h4>
+                    You are logged in!
+                  </h4>
+                )
+            }
+            {
+              !isAuthenticated() && (
+                  <h4>
+                    You are not logged in! Please{' '}
+                    <a
+                      style={{ cursor: 'pointer' }}
+                      onClick={this.login.bind(this)}
+                    >
+                      Log In
+                    </a>
+                    {' '}to continue.
+                  </h4>
+                )
+            }
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

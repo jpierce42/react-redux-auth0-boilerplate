@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Navbar, Nav, Button } from 'react-bootstrap'
+import { Navbar, Button } from 'react-bootstrap'
 
 class TopNav extends Component {
   goTo(route) {
@@ -20,7 +20,7 @@ class TopNav extends Component {
     const { isAuthenticated } = this.props.auth
 
     return (
-      <Navbar inverse fluid staticTop>
+      <Navbar inverse staticTop>
         <Navbar.Header>
           <Navbar.Brand>
             <Link to="/">My App</Link>
