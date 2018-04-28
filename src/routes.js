@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Router } from 'react-router-dom';
 import App from './App';
-import Home from './components/Home';
-import Callback from './components/Callback';
 import Auth from './services/auth/Auth';
+import Callback from './components/Callback';
+import Home from './pages/home/Home';
 import history from './history';
+import Recipes from './pages/recipes/Recipes';
 
 const auth = new Auth();
 
@@ -15,7 +16,6 @@ const handleAuthentication = ({location}) => {
 }
 
 export const makeMainRoutes = () => {
-  console.log(auth)
   return (
     <Router history={history}>
       <div>
@@ -25,6 +25,7 @@ export const makeMainRoutes = () => {
           handleAuthentication(props);
           return <Callback {...props} /> 
         }}/>
+        <Route path="/recipes" render={(props) => <Recipes auth={auth} {...props} />} />
       </div>
     </Router>
   );

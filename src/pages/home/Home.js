@@ -13,9 +13,10 @@ class Home extends Component {
           <Col sm={12} md={12}>
             {
               isAuthenticated() && (
-                  <h4>
-                    You are logged in!
-                  </h4>
+                  <div>
+                    <h4>You are logged in!</h4>
+                    <a href="/recipes">Go to Recipes</a>
+                  </div>
                 )
             }
             {
