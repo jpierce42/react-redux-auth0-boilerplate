@@ -1,6 +1,10 @@
-## React, Redux, and Auth0 Boilerplate
+## My Menu Builder
 
-This is a super simple web app boilerplate project with the following libraries hooked up and ready to go:
+An app to manage weekly menu planning and grocery shopping.
+
+
+
+### Created with my default preferred libraries:
 
 [Create React App](https://github.com/facebookincubator/create-react-app)
 
