@@ -15,7 +15,7 @@ class Home extends Component {
               isAuthenticated() && (
                   <div>
                     <h4>You are logged in!</h4>
-                    <a href="/recipes">Go to Recipes</a>
+                    <a href="/content">Go to content page...</a>
                   </div>
                 )
             }

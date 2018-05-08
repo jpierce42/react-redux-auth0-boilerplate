@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import Auth from '../services/auth/Auth';
 import Callback from '../components/Callback';
 import Home from '../pages/home/Home';
-import RecipesPage from '../pages/recipes/RecipesPage';
+import ContentPage from '../pages/content/ContentPage';
 import TopNav from '../layouts/TopNav'
 
 import './App.css';
@@ -31,7 +31,7 @@ class App extends Component {
           handleAuthentication(props);
           return <Callback {...props} />
         }}/>
-        <Route path="/recipes" render={(props) => <RecipesPage auth={auth} {...props} />} />
+        <Route path="/content" render={(props) => <ContentPage auth={auth} {...props} />} />
 
       </div>
     );
