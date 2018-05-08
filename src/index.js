@@ -1,13 +1,24 @@
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { createStore, applyMiddleware } from 'redux'
+
 // import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
-import { makeMainRoutes } from './routes';
+import registerServiceWorker from './utilities/registerServiceWorker';
 
-const routes = makeMainRoutes();
+import Root from './containers/Root'
+import { rootReducer } from './containers/rootReducer'
+
+const store = createStore(
+  rootReducer
+  // applyMiddleware(...middleware)
+)
 
 ReactDOM.render(
-  routes,
+  <Router>
+    <Root store={store}/>
+  </Router>,
   document.getElementById('root')
 );
 

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom';
 
-import Auth from './services/auth/Auth';
-import Callback from './components/Callback';
-import Home from './pages/home/Home';
-import RecipesPage from './pages/recipes/RecipesPage';
-import TopNav from './layouts/TopNav'
+import Auth from '../services/auth/Auth';
+import Callback from '../components/Callback';
+import Home from '../pages/home/Home';
+import RecipesPage from '../pages/recipes/RecipesPage';
+import TopNav from '../layouts/TopNav'
 
 import './App.css';
 
