@@ -1,7 +1,6 @@
-## My Menu Builder
+## React, Redux, and Auth0 Boilerplate
 
-An app to manage weekly menu planning and grocery shopping.
-
+ This is a super simple web app boilerplate project with the following libraries hooked up and ready to go: 
 
 
 ### Created with my default preferred libraries:

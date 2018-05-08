@@ -1,5 +1,5 @@
 {
-  "name": "closetchart-ui",
+  "name": "react-redux-auth0-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,5 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   }
 }
